@@ -7,7 +7,7 @@ import React, { useState } from 'react'
 export default function Home() {
   const [textAreaValue, setTextAreaValue] = useState('');
 
-  const handleChange = (event) => {
+  const handleChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
     setTextAreaValue(event.target.value);
   };
 
