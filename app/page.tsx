@@ -27,7 +27,7 @@ export default function Home() {
         <div className="slide-in flex mb-16 flex-col">
           <div >
             <h3 className="text-xl font-bold mb-2">Langchain AI Contributions</h3>
-            <a className="text-base custom-link" href="https://github.com/WaseeA/langchain">https://github.com/WaseeA/langchain</a>
+            <a className="text-base custom-link" href="https://github.com/langchain-ai/langchain/pull/13257">https://github.com/langchain-ai/langchain/pull/13257</a>
             <p className="text-lg">
             Built a Pandas DataFrame output parser, boosting LangChain’s compatibility with one
             of Python’s most popular data analytics libraries for enhanced data manipulation and

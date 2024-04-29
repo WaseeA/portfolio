@@ -61,3 +61,7 @@ body {
 .slide-out {
   animation: slideOut 2.0s ease forwards;
 }
+
+.custom-link {
+  color: #338af4; /* Change 'red' to the color you desire */
+}
