@@ -1,14 +1,14 @@
 'use client'
 
 import Image from "next/image";
-import Layout from "@/components/layout";
+import PageLayout from "@/components/pagelayout";
 
 export default function Home() {
 
   return (
     <main className="flex flex-col min-h-screen items-start justify-start p-24">
 
-      <Layout target="/contact" currPage=">">
+      <PageLayout target="/contact" currPage=">">
         <div className="slide-in flex mb-16 flex-col">
           <div >
             <h3 className="text-xl font-bold mb-2">Game Recommendation Engine</h3>
@@ -56,7 +56,7 @@ export default function Home() {
             <Image src="/medical-supply-chains.png" alt="Project Image" width={800} height={600} />
           </div>
         </div>
-      </Layout>
+      </PageLayout>
 
     </main>
   );

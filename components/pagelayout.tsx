@@ -1,4 +1,4 @@
-// components/Layout.tsx
+// components/pagelayout.tsx
 import React from 'react';
 import Image from "next/image";
 import FloatingButton from './floatingbutton';
@@ -10,11 +10,13 @@ interface LayoutProps {
   target: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, target, currPage, slideAnimation = 'slide-in' }) => {
+const PageLayout: React.FC<LayoutProps> = ({ children, target, currPage, slideAnimation = 'slide-in' }) => {
     let style = slideAnimation.concat(" flex flex-wrap mb-16");
 
     return (
     <div>
+      <FloatingButton currentPage={currPage} targetPath={target}></FloatingButton>
+
       <div className={style}>
           <div className="mr-8">
             <Image src="/headshot.jpg" alt="Your Image" width={150} height={150} />
@@ -30,11 +32,9 @@ const Layout: React.FC<LayoutProps> = ({ children, target, currPage, slideAnimat
           </div>
         </div>
 
-        <FloatingButton currentPage={currPage} targetPath={target}></FloatingButton>
-
         {children}
     </div>
   );
 };
 
-export default Layout;
+export default PageLayout;

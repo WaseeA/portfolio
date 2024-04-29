@@ -1,7 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation';
-import Layout from '@/components/layout';
+import PageLayout from '@/components/pagelayout';
 import React, { useState } from 'react'
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col min-h-screen justify-start p-24">
-      <Layout target="/" currPage="<" slideAnimation='slide-out'>
+      <PageLayout target="/" currPage="<" slideAnimation='slide-out'>
         <div className="slide-out flex flex-col mb-16">
         <h3 className="text-2xl mb-4">Contact Me:</h3>
         <form className="flex flex-col">
@@ -32,7 +32,7 @@ export default function Home() {
             </button>
         </form>
         </div>
-      </Layout>
+      </PageLayout>
     </main>
   );
 }
