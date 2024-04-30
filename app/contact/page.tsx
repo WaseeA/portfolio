@@ -1,8 +1,9 @@
 'use client'
 
+import React, { useState } from 'react'
 import { useRouter } from 'next/navigation';
 import PageLayout from '@/components/pagelayout';
-import React, { useState } from 'react'
+import { LinkedIn, GitHub } from '@/public/svgs';
 
 export default function Home() {
   const [textAreaValue, setTextAreaValue] = useState('');
@@ -18,6 +19,14 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen justify-start p-24">
       <PageLayout target="/" currPage="<" slideAnimation='slide-out'>
+        <div className="slide-out flex flex-col mb-16">
+          <h3 className="text-2xl mb-4">Connect With Me!</h3>
+          <div className='flex flex-row'>
+            <GitHub />
+            <LinkedIn />
+          </div>
+        </div>
+
         <div className="slide-out flex flex-col mb-16">
         <h3 className="text-2xl mb-4">Contact Me:</h3>
         <form className="flex flex-col">
