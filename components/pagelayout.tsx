@@ -20,14 +20,15 @@ const PageLayout: React.FC<LayoutProps> = ({ children, target, currPage, slideAn
       <div className={style}>
           <div className="mr-8">
             <Image src="/headshot.jpg" alt="Your Image" width={150} height={150} />
+            <br />
           </div>
           <div className="max-w-sm">
             <h1 className="text-4xl">Hi I'm Wasee</h1>
+            <br />
             <p className="text-1xl">
-              I'm a 3rd-Year Undergraduate Student at the University of Toronto
-              currently completing a Specialist in Computer Science. <br />
+              3rd-Year Undergraduate Student at the University of Toronto
+              currently completing a Specialist in Computer Science.
               <br />
-              Take a look at some of my projects! <br />
             </p>
           </div>
         </div>
