@@ -6,25 +6,23 @@ import PageLayout from "@/components/pagelayout";
 export default function Home() {
 
   return (
-    <main className="flex flex-col min-h-screen items-start justify-start p-24">
+    <main className="flex flex-col min-h-screen justify-start p-24">
+    <PageLayout target="/contact" currPage=">">
 
-      <PageLayout target="/contact" currPage=">">
-        <div className="slide-in flex mb-16 flex-col">
-          <div >
-            <h3 className="text-xl font-bold mb-2">Game Recommendation Engine</h3>
-            <a className="text-base custom-link" href="https://github.com/WaseeA/GameRecommenderEngine">https://github.com/WaseeA/GameRecommenderEngine</a>
-            <p className="text-lg">
-              Developed a Game Recommendation Engine for AMD RSX 
-              using machine learning algorithms (SVD) in Python, NumPy, 
-              scikit-learn. Currently in progress.
-            </p>
-          </div>
+      <div className="slide-in flex mb-16 flex-col">
+          <h3 className="text-xl font-bold mb-2">Game Recommendation Engine</h3>
+          <a className="text-base custom-link" href="https://github.com/WaseeA/GameRecommenderEngine">https://github.com/WaseeA/GameRecommenderEngine</a>
+          <p className="text-lg">
+            Developed a Game Recommendation Engine for AMD RSX 
+            using machine learning algorithms (SVD) in Python, NumPy, 
+            scikit-learn. Currently in progress.
+          </p>
           <div className="mr-8">
             <Image src="/RSX Game Recommendations.png" alt="Project Image" width={800} height={600} />
           </div>
-        </div>
+      </div>
 
-        <div className="slide-in flex mb-16 flex-col">
+      <div className="slide-in flex mb-16 flex-col">
           <div >
             <h3 className="text-xl font-bold mb-2">Langchain AI Contributions</h3>
             <a className="text-base custom-link" href="https://github.com/langchain-ai/langchain/pull/13257">https://github.com/langchain-ai/langchain/pull/13257</a>
@@ -56,8 +54,7 @@ export default function Home() {
             <Image src="/medical-supply-chains.png" alt="Project Image" width={800} height={600} />
           </div>
         </div>
-      </PageLayout>
-
-    </main>
+    </PageLayout>
+  </main>
   );
 }

@@ -5,8 +5,15 @@
   padding: 10px 20px;
   border-radius: 16px;
   background-color: rgba(10, 1, 1, 0);
-  color: #fff;
+  color: #d4f903;
   cursor: pointer;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.993);
+  border: 2px solid #d4f903;
+  animation: fadeIn 5s;
+  z-index: 99999;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
